@@ -1,0 +1,414 @@
+LOCUS       NC_000011               1778 bp    DNA     linear   CON 16-MAY-2021
+DEFINITION  Homo sapiens chromosome 11, GRCh38.p13 Primary Assembly.
+ACCESSION   NC_000011 REGION: 5225382..5227159
+VERSION     NC_000011.10  GI:568815587
+DBLINK      BioProject: PRJNA168
+            Assembly: GCF_000001405.39
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1778)
+  AUTHORS   Taylor,T.D., Noguchi,H., Totoki,Y., Toyoda,A., Kuroki,Y., Dewar,K.,
+            Lloyd,C., Itoh,T., Takeda,T., Kim,D.W., She,X., Barlow,K.F.,
+            Bloom,T., Bruford,E., Chang,J.L., Cuomo,C.A., Eichler,E.,
+            FitzGerald,M.G., Jaffe,D.B., LaButti,K., Nicol,R., Park,H.S.,
+            Seaman,C., Sougnez,C., Yang,X., Zimmer,A.R., Zody,M.C.,
+            Birren,B.W., Nusbaum,C., Fujiyama,A., Hattori,M., Rogers,J.,
+            Lander,E.S. and Sakaki,Y.
+  TITLE     Human chromosome 11 DNA sequence and analysis including novel gene
+            identification
+  JOURNAL   Nature 440 (7083), 497-500 (2006)
+   PUBMED   16554811
+REFERENCE   2  (bases 1 to 1778)
+  CONSRTM   International Human Genome Sequencing Consortium
+  TITLE     Finishing the euchromatic sequence of the human genome
+  JOURNAL   Nature 431 (7011), 931-945 (2004)
+   PUBMED   15496913
+REFERENCE   3  (bases 1 to 1778)
+  AUTHORS   Lander,E.S., Linton,L.M., Birren,B., Nusbaum,C., Zody,M.C.,
+            Baldwin,J., Devon,K., Dewar,K., Doyle,M., FitzHugh,W., Funke,R.,
+            Gage,D., Harris,K., Heaford,A., Howland,J., Kann,L., Lehoczky,J.,
+            LeVine,R., McEwan,P., McKernan,K., Meldrim,J., Mesirov,J.P.,
+            Miranda,C., Morris,W., Naylor,J., Raymond,C., Rosetti,M.,
+            Santos,R., Sheridan,A., Sougnez,C., Stange-Thomann,N.,
+            Stojanovic,N., Subramanian,A., Wyman,D., Rogers,J., Sulston,J.,
+            Ainscough,R., Beck,S., Bentley,D., Burton,J., Clee,C., Carter,N.,
+            Coulson,A., Deadman,R., Deloukas,P., Dunham,A., Dunham,I.,
+            Durbin,R., French,L., Grafham,D., Gregory,S., Hubbard,T.,
+            Humphray,S., Hunt,A., Jones,M., Lloyd,C., McMurray,A., Matthews,L.,
+            Mercer,S., Milne,S., Mullikin,J.C., Mungall,A., Plumb,R., Ross,M.,
+            Shownkeen,R., Sims,S., Waterston,R.H., Wilson,R.K., Hillier,L.W.,
+            McPherson,J.D., Marra,M.A., Mardis,E.R., Fulton,L.A.,
+            Chinwalla,A.T., Pepin,K.H., Gish,W.R., Chissoe,S.L., Wendl,M.C.,
+            Delehaunty,K.D., Miner,T.L., Delehaunty,A., Kramer,J.B., Cook,L.L.,
+            Fulton,R.S., Johnson,D.L., Minx,P.J., Clifton,S.W., Hawkins,T.,
+            Branscomb,E., Predki,P., Richardson,P., Wenning,S., Slezak,T.,
+            Doggett,N., Cheng,J.F., Olsen,A., Lucas,S., Elkin,C.,
+            Uberbacher,E., Frazier,M., Gibbs,R.A., Muzny,D.M., Scherer,S.E.,
+            Bouck,J.B., Sodergren,E.J., Worley,K.C., Rives,C.M., Gorrell,J.H.,
+            Metzker,M.L., Naylor,S.L., Kucherlapati,R.S., Nelson,D.L.,
+            Weinstock,G.M., Sakaki,Y., Fujiyama,A., Hattori,M., Yada,T.,
+            Toyoda,A., Itoh,T., Kawagoe,C., Watanabe,H., Totoki,Y., Taylor,T.,
+            Weissenbach,J., Heilig,R., Saurin,W., Artiguenave,F., Brottier,P.,
+            Bruls,T., Pelletier,E., Robert,C., Wincker,P., Smith,D.R.,
+            Doucette-Stamm,L., Rubenfield,M., Weinstock,K., Lee,H.M.,
+            Dubois,J., Rosenthal,A., Platzer,M., Nyakatura,G., Taudien,S.,
+            Rump,A., Yang,H., Yu,J., Wang,J., Huang,G., Gu,J., Hood,L.,
+            Rowen,L., Madan,A., Qin,S., Davis,R.W., Federspiel,N.A.,
+            Abola,A.P., Proctor,M.J., Myers,R.M., Schmutz,J., Dickson,M.,
+            Grimwood,J., Cox,D.R., Olson,M.V., Kaul,R., Raymond,C., Shimizu,N.,
+            Kawasaki,K., Minoshima,S., Evans,G.A., Athanasiou,M., Schultz,R.,
+            Roe,B.A., Chen,F., Pan,H., Ramser,J., Lehrach,H., Reinhardt,R.,
+            McCombie,W.R., de la Bastide,M., Dedhia,N., Blocker,H.,
+            Hornischer,K., Nordsiek,G., Agarwala,R., Aravind,L., Bailey,J.A.,
+            Bateman,A., Batzoglou,S., Birney,E., Bork,P., Brown,D.G.,
+            Burge,C.B., Cerutti,L., Chen,H.C., Church,D., Clamp,M.,
+            Copley,R.R., Doerks,T., Eddy,S.R., Eichler,E.E., Furey,T.S.,
+            Galagan,J., Gilbert,J.G., Harmon,C., Hayashizaki,Y., Haussler,D.,
+            Hermjakob,H., Hokamp,K., Jang,W., Johnson,L.S., Jones,T.A.,
+            Kasif,S., Kaspryzk,A., Kennedy,S., Kent,W.J., Kitts,P.,
+            Koonin,E.V., Korf,I., Kulp,D., Lancet,D., Lowe,T.M., McLysaght,A.,
+            Mikkelsen,T., Moran,J.V., Mulder,N., Pollara,V.J., Ponting,C.P.,
+            Schuler,G., Schultz,J., Slater,G., Smit,A.F., Stupka,E.,
+            Szustakowski,J., Thierry-Mieg,D., Thierry-Mieg,J., Wagner,L.,
+            Wallis,J., Wheeler,R., Williams,A., Wolf,Y.I., Wolfe,K.H.,
+            Yang,S.P., Yeh,R.F., Collins,F., Guyer,M.S., Peterson,J.,
+            Felsenfeld,A., Wetterstrand,K.A., Patrinos,A., Morgan,M.J., de
+            Jong,P., Catanese,J.J., Osoegawa,K., Shizuya,H., Choi,S. and
+            Chen,Y.J.
+  CONSRTM   International Human Genome Sequencing Consortium
+  TITLE     Initial sequencing and analysis of the human genome
+  JOURNAL   Nature 409 (6822), 860-921 (2001)
+   PUBMED   11237011
+  REMARK    Erratum:[Nature 2001 Aug 2;412(6846):565]
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CM000673.2.
+            On Feb 3, 2014 this sequence version replaced NC_000011.9.
+            Assembly Name: GRCh38.p13 Primary Assembly
+            The DNA sequence is composed of genomic sequence, primarily
+            finished clones that were sequenced as part of the Human Genome
+            Project. PCR products and WGS shotgun sequence have been added
+            where necessary to fill gaps or correct errors. All such additions
+            are manually curated by GRC staff. For more information see:
+            https://genomereference.org.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Updated annotation
+            Annotation Name             :: Homo sapiens Updated Annotation
+                                           Release 109.20210514
+            Annotation Version          :: 109.20210514
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.6
+            Annotation Method           :: Best-placed RefSeq; propagated
+                                           RefSeq model
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1778
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="11"
+     misc_feature    <1..>1778
+                     /standard_name="origin of replication at HBB"
+                     /note="Region: biological region; Derived by automated
+                     computational analysis using gene prediction method:
+                     RefSeqFE."
+                     /function="regulatory_interactions: HBB-LCR"
+                     /db_xref="GeneID:107133510"
+     rep_origin      <1..1625
+                     /experiment="EXISTENCE:nucleotide analog incorporation
+                     evidence [ECO:0001107][PMID:7481774]"
+                     /note="IR (initiation region); spanning amplicons 59.8 to
+                     65.6; identified by PCR analysis or hybridization of
+                     BrdU-labelled nascent strands with strand-specific probes"
+                     /direction=BOTH
+                     /db_xref="GeneID:107133510"
+     rep_origin      <1..76
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:16085752]"
+                     /note="bGRep-E; EcoRV/SwaI fragment; assayed by
+                     quantitative PCR of lambda exonuclease-treated
+                     size-fractionated nascent strands; functions as an origin
+                     of replication in an ectopic location"
+                     /db_xref="GeneID:107133510"
+     rep_origin      <1..1642
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:15060158]"
+                     /note="bGRep-I; NcoI fragment; assayed by quantitative PCR
+                     of lambda exonuclease-treated size-fractionated nascent
+                     strands; functions as an origin of replication in ectopic
+                     locations"
+                     /db_xref="GeneID:107133510"
+     misc_feature    <1..1209
+                     /standard_name="beta-globin gene 3' regulatory region"
+                     /note="Region: biological region; Derived by automated
+                     computational analysis using gene prediction method:
+                     RefSeqFE."
+                     /function="regulatory_interactions: HBB | HBB-LCR"
+                     /db_xref="GeneID:110006319"
+     regulatory      <1..1209
+                     /regulatory_class="enhancer"
+                     /experiment="EXISTENCE:transgenic organism evidence
+                     [ECO:0001131][PMID:3478680]"
+                     /note="1.7 kb BamHI-PstI transgene fragment that includes
+                     intron 2 and exon 3 of the beta gene"
+                     /function="activates an A-gamma-globin marker transgene in
+                     fetal liver and shows an additive effect with the beta 3'
+                     enhancer"
+                     /db_xref="GeneID:110006319"
+     regulatory      <1..459
+                     /regulatory_class="DNase_I_hypersensitive_site"
+                     /experiment="EXISTENCE:in vivo cleavage assay evidence
+                     [ECO:0001075][PMID:6200877]"
+                     /note="hypersensitive site that overlaps the 3' exon of
+                     the beta-globin gene; the nucleotide coordinates are
+                     approximate for this feature"
+                     /db_xref="GeneID:110006319"
+     gene            complement(83..1690)
+                     /gene="HBB"
+                     /gene_synonym="beta-globin; CD113t-C; ECYT6"
+                     /note="hemoglobin subunit beta; Derived by automated
+                     computational analysis using gene prediction method:
+                     BestRefSeq."
+                     /db_xref="GeneID:3043"
+                     /db_xref="HGNC:HGNC:4827"
+                     /db_xref="MIM:141900"
+     mRNA            complement(join(83..345,1196..1418,1549..1690))
+                     /product="hemoglobin subunit beta"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /transcript_id="NM_000518.5"
+                     /db_xref="Ensembl:ENST00000335295.4"
+                     /db_xref="GeneID:3043"
+     regulatory      91..>1778
+                     /regulatory_class="replication_regulatory_region"
+                     /experiment="EXISTENCE:nucleotide analog incorporation
+                     evidence [ECO:0001107][PMID:9703500]"
+                     /note="core replicator region (position 61100 to position
+                     63754 of J00179)"
+                     /function="required but not sufficient for replication
+                     origin activity in a transgene in an ectopic location"
+                     /db_xref="GeneID:107133510"
+     CDS             complement(join(217..345,1196..1418,1549..1640))
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /codon_start=1
+                     /product="hemoglobin subunit beta"
+                     /protein_id="NP_000509.1"
+                     /db_xref="GI:4504349"
+                     /db_xref="CCDS:CCDS7753.1"
+                     /db_xref="Ensembl:ENSP00000333994.3"
+                     /db_xref="GeneID:3043"
+                     /translation="MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFE
+                     SFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPE
+                     NFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH"
+
+
+     rep_origin      292..>1778
+                     /experiment="EXISTENCE:genetic transformation evidence
+                     [ECO:0005027][PMID:9892678]"
+                     /note="HindIII/EcoRI fragment; confers replication
+                     activity to a human artificial chromosome (HAC)"
+                     /db_xref="GeneID:107133510"
+     regulatory      292..1219
+                     /regulatory_class="replication_regulatory_region"
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:15060158]"
+                     /note="Rep-I-1 (PmlI/EcoRI fragment)"
+                     /function="important for replication origin activity"
+                     /db_xref="GeneID:107133510"
+     regulatory      293..1209
+                     /regulatory_class="enhancer"
+                     /experiment="EXISTENCE:deletion mutation evidence
+                     [ECO:0005510][PMID:3432265]"
+                     /experiment="EXISTENCE:transgenic organism evidence
+                     [ECO:0001131][PMID:10807795]"
+                     /note="0.9 kb EcoRI-BamHI fragment spanning intron 2;
+                     region deleted in the H2beta-IVS2 construct"
+                     /function="required for LCR activity by 5'HS3 along with
+                     the beta 3' enhancer in beta-gamma hybrid transgenes;
+                     increases inducibility of the beta-globin gene in
+                     transfected MEL cells"
+                     /db_xref="GeneID:110006319"
+     regulatory      535..1335
+                     /regulatory_class="DNase_I_hypersensitive_site"
+                     /experiment="EXISTENCE:in vivo cleavage assay evidence
+                     [ECO:0001075][PMID:12397609]"
+                     /note="the nucleotide coordinates are approximate for this
+                     feature"
+                     /db_xref="GeneID:107133510"
+     regulatory      693..1209
+                     /regulatory_class="matrix_attachment_region"
+                     /experiment="EXISTENCE:fractionation evidence
+                     [ECO:0000100][PMID:2559410, PMID:3208739]"
+                     /note="beta-IVS2 SAR"
+                     /function="associates with nuclear scaffold"
+                     /db_xref="GeneID:107133510"
+     regulatory      883..1132
+                     /regulatory_class="replication_regulatory_region"
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:16877501]"
+                     /note="delta((AG) and(AT)) region; includes RepI-1(AG)"
+                     /function="contributes to replication origin activity"
+                     /db_xref="GeneID:107133510"
+     regulatory      976..990
+                     /regulatory_class="transcriptional_cis_regulatory_region"
+                     /experiment="EXISTENCE:cell transfection experiment
+                     evidence [ECO:0005606][PMID:30867287]"
+                     /note="triplex-forming bases of the beta-globin (L) tfRNA
+                     (5'-UUUUUUUUCUUCUCC-3' on minus strand)"
+                     /function="forms DNA-RNA triplex with 5'HS2 of the
+                     HBB-LCR, resulting in reduced expression of the espilon-
+                     and gamma-globin genes in transfected K562 cells, and the
+                     gamma- and beta-globin genes in transfected HUDEP-2 cells"
+                     /db_xref="GeneID:110006319"
+     misc_feature    1189..>1778
+                     /standard_name="HBB recombination region"
+                     /note="Region: biological region; Derived by automated
+                     computational analysis using gene prediction method:
+                     RefSeqFE."
+                     /function="recombination_partner: LOC106099063 |
+                     LOC106099064"
+                     /db_xref="GeneID:106099062"
+     misc_recomb     1189..1246
+                     /recombination_class="non_allelic_homologous"
+                     /experiment="EXISTENCE:nucleotide sequencing assay
+                     evidence [ECO:0000219][PMID:2060774]"
+                     /note="sub-region HBB Lepore-Boston-Washington, recombines
+                     with sub-region HBD Lepore-Boston-Washington within the
+                     HBD recombination region"
+                     /db_xref="GeneID:106099062"
+     rep_origin      1215..>1778
+                     /experiment="EXISTENCE:nucleotide analog incorporation
+                     evidence [ECO:0001107][PMID:8255298]"
+                     /note="region containing bidirectional origin of
+                     replication between H and I probe fragments; flanked by
+                     BamHI and BglII restriction sites; identified by
+                     hybridization of BrdU-labelled nascent strands with
+                     strand-specific probes"
+                     /direction=BOTH
+                     /db_xref="GeneID:107133510"
+     rep_origin      1230..1625
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:10891496]"
+                     /experiment="EXISTENCE:nucleotide analog incorporation
+                     evidence [ECO:0001107][PMID:9703500]"
+                     /note="hbetaG amplicon; peak of nascent strand synthesis
+                     identified by competitive PCR"
+                     /direction=BOTH
+                     /db_xref="GeneID:107133510"
+     misc_recomb     1250..1267
+                     /recombination_class="non_allelic_homologous"
+                     /experiment="EXISTENCE:nucleotide sequencing assay
+                     evidence [ECO:0000219][PMID:2060774]"
+                     /note="sub-region HBB Lepore-Kenya, recombines with
+                     sub-region HBD Lepore-Kenya within the HBG1 recombination
+                     region"
+                     /db_xref="GeneID:106099062"
+     misc_recomb     1257..1303
+                     /recombination_class="non_allelic_homologous"
+                     /experiment="EXISTENCE:nucleotide sequencing assay
+                     evidence [ECO:0000219][PMID:2060774]"
+                     /note="sub-region HBB Lepore-Baltimore, recombines with
+                     sub-region HBD Lepore-Baltimore within the HBD
+                     recombination region"
+                     /db_xref="GeneID:106099062"
+     misc_recomb     1261..1414
+                     /recombination_class="non_allelic_homologous"
+                     /experiment="EXISTENCE:nucleotide sequencing assay
+                     evidence [ECO:0000219][PMID:23001912]"
+                     /note="sub-region HBB Lepore-ARUP, recombines with
+                     sub-region HBD Lepore-ARUP within the HBD recombination
+                     region"
+                     /db_xref="GeneID:106099062"
+     misc_recomb     1501..>1778
+                     /recombination_class="meiotic"
+                     /experiment="EXISTENCE:chromatin immunoprecipitation-seq
+                     evidence [ECO:0000229][PMID:25395542]"
+                     /note="meiotic double-strand break mapped by DNA meiotic
+                     recombinase 1 chromatin immunoprecipitation followed by
+                     single-stranded DNA enrichment and sequencing in the germ
+                     cells of some male individuals with PRDM9 A/A, PRDM9 A/B,
+                     and PRDM9 A/C genotypes"
+                     /db_xref="GeneID:106099062"
+     misc_recomb     1534..1572
+                     /recombination_class="non_allelic_homologous"
+                     /experiment="EXISTENCE:nucleotide sequencing assay
+                     evidence [ECO:0000219][PMID:2060774]"
+                     /note="sub-region HBB Lepore-Hollandia, recombines with
+                     HBD Lepore-Hollandia within the HBD recombination region"
+                     /db_xref="GeneID:106099062"
+     misc_feature    1577..1592
+                     /note="nucleotide motif; similarity to the predicted
+                     16-mer PRDM9 C-type binding motif, CCNCNNTNNNCNTNNC;
+                     Derived by automated computational analysis using gene
+                     prediction method: RefSeqFE."
+                     /db_xref="GeneID:106099062"
+     rep_origin      1605..>1778
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:10891496]"
+                     /note="hubetaPr1 amplicon; peak of nascent strand
+                     synthesis identified by competitive PCR of lambda
+                     exonuclease-treated nascent strands"
+                     /direction=BOTH
+                     /db_xref="GeneID:107133510"
+     rep_origin      1637..>1778
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:15060158]"
+                     /note="bGRep-P; NcoI fragment; assayed by quantitative PCR
+                     of lambda exonuclease-treated size-fractionated nascent
+                     strands; functions as an origin of replication in ectopic
+                     locations"
+                     /db_xref="GeneID:107133510"
+     regulatory      1637..>1778
+                     /regulatory_class="replication_regulatory_region"
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:15060158]"
+                     /note="Rep-P-2 (NcoI/SnaBI fragment)"
+                     /function="important for replication origin activity"
+                     /db_xref="GeneID:107133510"
+     regulatory      1709..1753
+                     /regulatory_class="replication_regulatory_region"
+                     /experiment="EXISTENCE:nuclease protection assay evidence
+                     [ECO:0001106][PMID:15060158, PMID:16877501]"
+                     /note="Rep-P(AG)"
+                     /function="contributes to replication origin activity"
+                     /db_xref="GeneID:107133510"
+ORIGIN      
+        1 cttcatttct ttatgtttta aatgcactga cctcccacat tcccttttta gtaaaatatt
+       61 cagaaataat ttaaatacat cattgcaatg aaaataaatg ttttttatta ggcagaatcc
+      121 agatgctcaa ggcccttcat aatatccccc agtttagtag ttggacttag ggaacaaagg
+      181 aacctttaat agaaattgga cagcaagaaa gcgagcttag tgatacttgt gggccagggc
+      241 attagccaca ccagccacca ctttctgata ggcagcctgc actggtgggg tgaattcttt
+      301 gccaaagtga tgggccagca cacagaccag cacgttgccc aggagctgtg ggaggaagat
+      361 aagaggtatg aacatgatta gcaaaagggc ctagcttgga ctcagaataa tccagcctta
+      421 tcccaaccat aaaataaaag cagaatggta gctggattgt agctgctatt agcaatatga
+      481 aacctcttac atcagttaca atttatatgc agaaatattt atatgcagag atattgctat
+      541 tgccttaacc cagaaattat cactgttatt ctttagaatg gtgcaaagag gcatgataca
+      601 ttgtatcatt attgccctga aagaaagaga ttagggaaag tattagaaat aagataaaca
+      661 aaaaagtata ttaaaagaag aaagcatttt ttaaaattac aaatgcaaaa ttaccctgat
+      721 ttggtcaata tgtgtacaca tattaaaaca ttacacttta acccataaat atgtataatg
+      781 attatgtatc aattaaaaat aaaagaaaat aaagtaggga gattatgaat atgcaaataa
+      841 gcacacatat attccaaata gtaatgtact aggcagactg tgtaaagttt ttttttaagt
+      901 tacttaatgt atctcagaga tatttccttt tgttatacac aatgttaagg cattaagtat
+      961 aatagtaaaa attgcggaga agaaaaaaaa agaaagcaag aattaaacaa aagaaaacaa
+     1021 ttgttatgaa cagcaaataa aagaaactaa aacgatcctg agacttccac actgatgcaa
+     1081 tcattcgtct gtttcccatt ctaaactgta ccctgttact tatccccttc ctatgacatg
+     1141 aacttaacca tagaaaagaa ggggaaagaa aacatcaagc gtcccataga ctcaccctga
+     1201 agttctcagg atccacgtgc agcttgtcac agtgcagctc actcagtgtg gcaaaggtgc
+     1261 ccttgaggtt gtccaggtga gccaggccat cactaaaggc accgagcact ttcttgccat
+     1321 gagccttcac cttagggttg cccataacag catcaggagt ggacagatcc ccaaaggact
+     1381 caaagaacct ctgggtccaa gggtagacca ccagcagcct aagggtggga aaatagacca
+     1441 ataggcagag agagtcagtg cctatcagaa acccaagagt cttctctgtc tccacatgcc
+     1501 cagtttctat tggtctcctt aaacctgtct tgtaaccttg ataccaacct gcccagggcc
+     1561 tcaccaccaa cttcatccac gttcaccttg ccccacaggg cagtaacggc agacttctcc
+     1621 tcaggagtca gatgcaccat ggtgtctgtt tgaggttgct agtgaacaca gttgtgtcag
+     1681 aagcaaatgt aagcaataga tggctctgcc ctgactttta tgcccagccc tggctcctgc
+     1741 cctccctgct cctgggagta gattggccaa ccctaggg
+//

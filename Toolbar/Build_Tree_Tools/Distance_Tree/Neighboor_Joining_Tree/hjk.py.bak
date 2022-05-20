@@ -1,0 +1,14 @@
+import Toolbar.Build_Tree_Tools.Distance_Tree.Neighboor_Joining_Tree.Neighboor_Joining_New as NJ
+
+only_name_array_samp = ['2323','23423','1234','3424','3425','42345','435456']
+'''
+print('--------------------NODES INFO---------------------')
+for i in range(len(DistanceMatInterest)):
+    for j in range((len(DistanceMatInterest[0]))):
+        if i == 0 and j != 0:
+            DistanceMatInterest[0][j] = only_name_array_samp[j-1]
+        elif j == 0 and i != 0:
+            DistanceMatInterest[i][0] = only_name_array_samp[i-1]
+print(DistanceMatInterest)
+Pathway = NJ.Neighboor_Joining(DistanceMatInterest)
+'''

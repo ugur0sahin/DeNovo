@@ -1,0 +1,100 @@
+LOCUS       NC_009150               1233 bp    DNA     linear   CON 26-JAN-2018
+DEFINITION  Equus caballus isolate Twilight breed thoroughbred chromosome 7,
+            EquCab3.0, whole genome shotgun sequence.
+ACCESSION   NC_009150 REGION: 76113889..76115121
+VERSION     NC_009150.3  GI:1325362989
+DBLINK      BioProject: PRJNA19129
+            BioSample: SAMN02953672
+            Assembly: GCF_002863925.1
+KEYWORDS    WGS; RefSeq.
+SOURCE      Equus caballus (horse)
+  ORGANISM  Equus caballus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Perissodactyla; Equidae; Equus.
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CM009154.1.
+            On Jan 25, 2018 this sequence version replaced NC_009150.2.
+            Assembly name: EquCab3.0
+            The genomic sequence for this RefSeq record is from the
+            whole-genome assembly released by the University of California,
+            Santa Cruz on 2018/01/05. The original whole-genome shotgun project
+            has the accession PJAA00000000.1.
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Provider      :: University of California, Santa Cruz
+            Assembly Date          :: 2017
+            Assembly Method        :: Celera Assembler v. 2017; HiRise v. 2017
+            Assembly Name          :: EquCab3.0
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 88.0x
+            Sequencing Technology  :: Sanger; Illumina HiSeq; PacBio
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Equus caballus Annotation Release
+                                           103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1233
+                     /organism="Equus caballus"
+                     /mol_type="genomic DNA"
+                     /isolate="Twilight"
+                     /db_xref="taxon:9796"
+                     /chromosome="7"
+                     /sex="female"
+                     /breed="thoroughbred"
+     gene            complement(22..1218)
+                     /gene="HBB"
+                     /note="hemoglobin, beta; Derived by automated
+                     computational analysis using gene prediction method:
+                     BestRefSeq."
+                     /db_xref="GeneID:100054109"
+     mRNA            complement(join(22..150,776..998,1127..1218))
+                     /product="hemoglobin, beta"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /transcript_id="NM_001164018.1"
+                     /db_xref="GeneID:100054109"
+     CDS             complement(join(22..150,776..998,1127..1218))
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /codon_start=1
+                     /product="hemoglobin subunit beta"
+                     /protein_id="NP_001157490.1"
+                     /db_xref="GI:255683515"
+                     /db_xref="GeneID:100054109"
+                     /translation="MVQLSGEEKAAVLALWDKVNEEEVGGEALGRLLVVYPWTQRFFD
+                     SFGDLSNPGAVMGNPKVKAHGKKVLHSFGEGVHHLDNLKGTFAALSELHCDKLHVDPE
+                     NFRLLGNVLVVVLARHFGKDFTPELQASYQKVVAGVANALAHKYH"
+ORIGIN      
+        1 tcggaaagca tgaaagggag ctcagtggta tttgtgggcc agtgcattgg ccacaccagc
+       61 caccaccttt tgataggaag cctgcaactc tggggtgaaa tccttgccaa agtggcgagc
+      121 cagcacaaca accagcacgt tgcccaggag ctgtggggaa gagaaaaaag agggggcatg
+      181 gttagcagag ggaagcagct tgggctcaga atattccaat cttatccaaa gctgtgccct
+      241 agaatataag caggaaaata gctgaatctt ggatgttact atttatgtga atccgctaat
+      301 aacaacctga atttatactt aaaaatgtct ctccctttct gccttaaccc agaacttgtt
+      361 atgttattct ttagaaccat gaaaggaagc aataatacat gttatccttt ttgctttgaa
+      421 agaaagagtt agagacaagg gaaagaaagt attagatgaa tttttttttt aaaaagaaag
+      481 tagattcaaa gaagaaagtt gtttttaatt aaacactcaa aaaatttaat taaaaataca
+      541 atgagaagat attgcagaga ccaaaaagag gaaaacaaga atgaaccagc agaaacaagg
+      601 gttttgagca aagaaaataa aagaacttaa atgttcctcc ggagtccgca gtgatgcaac
+      661 cacaacatct cttcacattc tgaactgcag cctgactttc atgtcctctc ctcattacat
+      721 gagcttgacc aaaaagagga aggcaaagga gaaattgagg gtcacagaga ctcaccctga
+      781 agttctcagg atccacgtgc agcttgtcac agtgcagctc actcagcgca gcaaaggtgc
+      841 ccttgaggtt gtcaagatga tgcacgccct caccaaagga gtgtagcact ttcttgccgt
+      901 gggccttcac cttggggttg cccatcacag caccaggatt ggacagatcc ccaaaggagt
+      961 caaagaacct ctgagtccat gggtagacaa ccagcagcct aagaggtttt aaacagcaca
+     1021 agagacagag gcagtcagta cctgtcagaa acccaggaga cggtcgtata ttcacatacc
+     1081 cagcttctac gactctcctt aagctgcttg tatcctggat actaacctgc ccagggcttc
+     1141 accaccaact tcttcctcat tcaccttgtc ccacagggcc aagacagctg ccttctcttc
+     1201 accactcagt tgcaccatgg tgtctggttg tgt
+//

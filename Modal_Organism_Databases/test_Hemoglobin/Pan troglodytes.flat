@@ -1,0 +1,119 @@
+LOCUS       NC_036890               1776 bp    DNA     linear   CON 21-MAR-2018
+DEFINITION  Pan troglodytes isolate Yerkes chimp pedigree #C0471 (Clint)
+            chromosome 11, Clint_PTRv2, whole genome shotgun sequence.
+ACCESSION   NC_036890 REGION: 5085976..5087751
+VERSION     NC_036890.1  GI:1348311420
+DBLINK      BioProject: PRJNA10627
+            BioSample: SAMN06272697
+            Assembly: GCF_002880755.1
+KEYWORDS    WGS; RefSeq.
+SOURCE      Pan troglodytes (chimpanzee)
+  ORGANISM  Pan troglodytes
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Pan.
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CM009249.2.
+            Assembly name: Clint_PTRv2
+            The genomic sequence for this RefSeq record is from the
+            whole-genome assembly released by the University of Washington on
+            2018/01/19. The original whole-genome shotgun project has the
+            accession NBAG00000000.3. The chromosome Y sequence was finished at
+            the McDonnell Genome Institute, Washington University School of
+            Medicine with detailed mapping and extensive collaboration with
+            David Page's group at the Whitehead Institute (Hughes et al.,
+            Nature, 2005 437:100-3).
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Provider      :: University of Washington
+            Assembly Date          :: OCT-2017
+            Assembly Method        :: Falcon v. (git hash: 91e700c4) Nov 2015
+            Polishing Method       :: Quiver v. 1.1.0; Pilon v. 1.17
+            Assembly Name          :: Clint_PTRv2
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 124.0x
+            Sequencing Technology  :: PacBio; Illumina NextSeq 500; BioNano
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Pan troglodytes Annotation Release
+                                           105
+            Annotation Version          :: 105
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1776
+                     /organism="Pan troglodytes"
+                     /mol_type="genomic DNA"
+                     /isolate="Yerkes chimp pedigree #C0471 (Clint)"
+                     /db_xref="taxon:9598"
+                     /chromosome="11"
+                     /sex="male"
+                     /tissue_type="blood"
+                     /dev_stage="full grown adult"
+     gene            complement(26..1753)
+                     /gene="HBB"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon."
+                     /db_xref="GeneID:450978"
+                     /db_xref="VGNC:VGNC:3255"
+     mRNA            complement(join(26..288,1139..1361,1492..1753))
+                     /product="hemoglobin subunit beta"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 19 mRNAs, 1697 ESTs, 170 Proteins,
+                     and 100% coverage of the annotated genomic feature by
+                     RNAseq alignments, including 59 samples with support for
+                     all annotated introns"
+                     /transcript_id="XM_508242.4"
+                     /db_xref="GeneID:450978"
+     CDS             complement(join(160..288,1139..1361,1492..1583))
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon."
+                     /codon_start=1
+                     /product="hemoglobin subunit beta"
+                     /protein_id="XP_508242.1"
+                     /db_xref="GI:55635219"
+                     /db_xref="GeneID:450978"
+                     /translation="MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFE
+                     SFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPE
+                     NFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH"
+ORIGIN      
+        1 attcagaaat aatttaaata caccattgca atgaaaataa atgtttttta ttaggcagaa
+       61 tccagatgct caaggccctt cataatatcc cccagtttag tagttggact tagggaacaa
+      121 aggaaccttt aatagaaatt ggacagcaag aaagcgagct tagtgatact tgtgggccag
+      181 ggcattagcc acaccagcca ccactttctg ataggcagcc tgcactggtg gggtgaattc
+      241 tttgccaaag tgatgggcca gcacacagac cagcacgttg cccaggagct gtgggaggaa
+      301 gacaagaggt atgaacatga ttagcaaaag ggcctagctt ggactcagaa taatccagcc
+      361 ttatcccaac cataaaataa aagaagaatg gtagctggat tgtagctgct attagcaata
+      421 tgaaacctct tacatcagtt acaatttata tgcagaaata tttatatgca gaaatattgc
+      481 tattgcctta acccagaaat tatcactgtt attctttaga atggtgcaaa gaggcatgat
+      541 acattgtatc attattgccc tgaaagaaag agattaggga aagtagtaga aataagataa
+      601 acaaaaaagt atattaaaag aagaaagcat tttttaaaat tacaaatgca aaattaccct
+      661 gatttggtca atatgtgtac acatattaaa acattacact ttaacccata aatatgtata
+      721 atgattatgt atcaattaaa aataaaagaa aataaagtag gtagattatg aatatgcaaa
+      781 taagcacaca tatattccaa atagtaatgt actaggcaga ctgcgtaaac atttttttta
+      841 agttacttaa tgtatctcag agatatttcc ttttgttata cacaacgtta aggcattaag
+      901 tataatagta aaaattgcag agaagaaaaa aaaagaaagc aagaattaaa caaaagaaaa
+      961 caattgttat gaacagcaaa taaaagaaac taaaatgatc ctgagagttc cacactgatg
+     1021 caatcatttg tctgtttccc attctaaact gtaccctgtt acttatcccc ttcctatgac
+     1081 atgaacttaa ccatagaaaa gaaggggaaa gaaaacatca agggtcccat agactcaccc
+     1141 tgaagttctc aggatccacg tgcagcttgt cacagtgcag ctcactcagt gtggcaaagg
+     1201 tgcccttgag gttgtccagg tgagccaggc catcactaaa ggcaccgagc actttcttgc
+     1261 catgagcctt caccttaggg ttgcccataa cagcatcagg agtggacaga tccccaaagg
+     1321 actcaaagaa cctctgggtc caagggtaga ccaccagcag cctaagggtg ggaaaatagc
+     1381 ccaataggca gagagagtca gtgcctatca gaaacccaag agtcttctct gtctccacat
+     1441 gcccagtttc tactggtctc cttaagcctg tcttgtaacc ttgataccaa cctgcccagg
+     1501 gcctcaccac caacttcatc cacgttcacc ttgccccaca gggcagtaac ggcagacttc
+     1561 tcctcaggag tcaggtgcac catggtgtct gtttgaggtt gctagtgaac acagttgtgt
+     1621 cagaagcaaa tgtaagcaat agatggctct gccctgactt ttatgcccag ccctggctcc
+     1681 tgccctccct gctcctggga gtagattggc caaccctagg gtgtggctcc acagggtgag
+     1741 gtctaagtga tgacagccat acctgtcctt ggctct
+//

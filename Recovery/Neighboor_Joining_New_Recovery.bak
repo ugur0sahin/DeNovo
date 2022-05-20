@@ -1,0 +1,206 @@
+from Toolbar.Aligners.Protein_Alignment.multiple_alignment_scores import *
+import numpy as np
+import random
+import string
+
+
+#warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
+
+
+def zeros(A):
+    zero_Matrix=[]
+    for i in range(A[0]):
+        rows=[]
+        for j in range(A[1]):
+            rows.append(0)
+        zero_Matrix.append(rows)
+    return zero_Matrix
+
+def add_row(add_element_list, Matrix):
+    Matrix.insert(0,add_element_list)
+    return Matrix
+
+def add_column(add_element_list, Matrix):
+    for i in range(len(Matrix)):
+        Matrix[i].insert(0,add_element_list[i])
+    return Matrix
+
+def Substract_Names(Distance_Matrix):
+    Distance_Matrix_without_names = []
+    for i in range(len(Distance_Matrix)):
+        if not i == 0:
+            Distance_Matrix_without_names.append(Distance_Matrix[i][1:])
+    return Distance_Matrix_without_names
+
+
+def Joining(Distance_Matrix):
+    names=Distance_Matrix[0]
+    Distance_Matrix_without_names = Substract_Names(Distance_Matrix)
+    zero_Matrix=zeros([len(Distance_Matrix_without_names),len(Distance_Matrix_without_names[0])])
+
+    for i in range(len(Distance_Matrix_without_names)):
+        for j in range(len(Distance_Matrix_without_names[i])):
+            #if not i==j:
+            if i<j:
+                #The step Q(a,b)=(n-2)d - sum(d(a,k) - sum(d(b,k))
+                sum_for_j=0 ; sum_for_i=0
+                for iterator_for_j in range(len(Distance_Matrix_without_names)): sum_for_j += float(Distance_Matrix_without_names[j][iterator_for_j])
+                for iterator_for_i in range(len(Distance_Matrix_without_names)): sum_for_i += float(Distance_Matrix_without_names[iterator_for_i][i])
+
+                changed_element=((len(Distance_Matrix_without_names)-2)* float(Distance_Matrix_without_names[i][j])) - sum_for_j -sum_for_i
+                zero_Matrix[i][j] = changed_element
+                zero_Matrix[j][i] = changed_element
+    zero_Matrix_wo_name=np.matrix(zero_Matrix)
+    add_row(names[1:],zero_Matrix)
+    add_column(names,zero_Matrix)
+    zero_Matrix_Q=np.matrix(zero_Matrix)
+    print(zero_Matrix_Q)
+
+    return zero_Matrix_Q, zero_Matrix_wo_name
+
+
+
+
+#result=np.matrix([[  0, -50, -38, -34, -70],[-50,   0, -38, -34, -34],[-38, -38,   0, -40, -40,],[-34, -34, -40,   0, -48],[-70, -34, -40, -48,   0]])
+def Find_Min_in_Matrix(Q_Matrix):
+    min=np.min(Q_Matrix)
+    print(min)
+    x=np.where(Q_Matrix==min) # where fonksiyonu bozuk
+    print(x)
+    print(x[1][0],x[1][1])
+
+    return x[1][0],x[1][1]
+
+#ind_i,ind_j=Find_Min_in_Matrix(result1)
+
+
+def Generate_Node(Distance_Matrix, Q_WOname):
+    recovery_Distance_Matrix=Distance_Matrix
+
+    ind_i, ind_j = Find_Min_in_Matrix(Q_WOname)
+    #print(Distance_Matrix_WOname)
+
+    ind_i = ind_i + 1
+    ind_j = ind_j + 1
+
+    names_will_create_nodes=(Distance_Matrix[ind_i][0], Distance_Matrix[0][ind_j])
+    #print(names_will_create_nodes)
+
+    ###Node and distance from their components generated and saved to node_info
+
+    element1_from_all_dist_sum=0
+    element2_from_all_dist_sum=0
+    for i in range(len(Distance_Matrix)):
+        for j in range(len(Distance_Matrix[i])):
+            if Distance_Matrix[0][j]==names_will_create_nodes[0] and Distance_Matrix[i][0]==names_will_create_nodes[1]:
+                nodes_element_distances=float(Distance_Matrix[i][j])
+            if Distance_Matrix[0][j]==names_will_create_nodes[0] and i!=0:
+                element1_from_all_dist_sum += float(Distance_Matrix[i][j])
+            if Distance_Matrix[0][j]==names_will_create_nodes[1]and i!=0:
+                element2_from_all_dist_sum += float(Distance_Matrix[i][j])
+
+    p1_i = ((1 / 2) * nodes_element_distances)
+    p2_i = (1 / (2 * ((len(Distance_Matrix)-1) - 2)) * (element1_from_all_dist_sum - element2_from_all_dist_sum))
+
+    distance_from_generated_node_el1 = p1_i + p2_i
+    distance_from_generated_node_el2 = nodes_element_distances-distance_from_generated_node_el1
+    #print(distance_from_generated_node_el1,distance_from_generated_node_el2)
+    a = random.choice(string.ascii_letters)
+    a = a.upper()
+    node_info=(a,nodes_element_distances,(distance_from_generated_node_el1,names_will_create_nodes[0]),(distance_from_generated_node_el2,names_will_create_nodes[1]))
+    print(node_info)
+
+    Distance_Matrix = np.matrix(Distance_Matrix)
+    #print(np.where(Distance_Matrix == 'a'))
+
+
+    ###Calculate of other distances add previous distances before
+
+    zero_Matrix=zeros([len(Q_WOname)-1, len(Q_WOname)-1])
+    names_colon=(recovery_Distance_Matrix[0])
+    names_row=names_colon[1:]
+    names_colon.remove(names_will_create_nodes[0])
+    names_colon.remove(names_will_create_nodes[1])
+    names_row.remove(names_will_create_nodes[0])
+    names_row.remove(names_will_create_nodes[1])
+    names_row.insert(0,a.upper())
+    names_colon.insert(1,a.upper())
+    #print(names_colon, names_row)
+
+    add_row(names_row,zero_Matrix)
+    add_column(names_colon,zero_Matrix)
+
+    zero_Matrix=np.matrix(zero_Matrix)
+
+    for i2 in range(len(zero_Matrix)):
+        for j2 in range(len(zero_Matrix)):
+            if i2 != 0 and j2 != 0:  # Except Letters
+                if zero_Matrix[0,j2] == zero_Matrix[i2,0]:
+                    zero_Matrix[i2,j2] = float(0)  # Diagonal zeros
+                else:
+                    if zero_Matrix[0,j2] == a:
+                        sr1=zero_Matrix[i2,0]
+                        for i in range(len(Distance_Matrix)):
+                            for j in range(len(Distance_Matrix)):
+                                if Distance_Matrix[i,0]==sr1 and Distance_Matrix[0,j]==names_will_create_nodes[0]:
+                                    p1=Distance_Matrix[i,j]
+                                if Distance_Matrix[i,0]==sr1 and Distance_Matrix[0,j]==names_will_create_nodes[1]:
+                                    p2 = Distance_Matrix[i,j]
+                        zero_Matrix[i2, j2] = 1 / 2 *( float(p2) + float(p1) - float(nodes_element_distances))
+
+                    elif zero_Matrix[i2,0] == a:
+                        sr1 = zero_Matrix[0, j2]
+                        for i in range(len(Distance_Matrix)):
+                            for j in range(len(Distance_Matrix)):
+                                if Distance_Matrix[i,0] == sr1 and Distance_Matrix[0,j] == names_will_create_nodes[0]:
+                                    p1 = Distance_Matrix[i,j]
+                                if Distance_Matrix[i,0] == sr1 and Distance_Matrix[0,j] == names_will_create_nodes[1]:
+                                    p2 = Distance_Matrix[i,j]
+                        zero_Matrix[i2, j2] = 1 / 2 * (float(p2) + float(p1) - float(nodes_element_distances))
+                    else:
+                        get_elements_will_search = [zero_Matrix[i2,0], zero_Matrix[0,j2]]
+                        A = np.where(Distance_Matrix == get_elements_will_search[0])
+                        b = np.where(Distance_Matrix == get_elements_will_search[1])
+                        zero_Matrix[i2,j2] = float(Distance_Matrix[A[0][1], b[1][0]])
+
+    zero_Matrix=zero_Matrix.tolist()
+    return zero_Matrix
+
+####
+
+
+
+counter=0
+while True:
+    try:
+        counter+=1
+        if counter==1:
+            #A = ['HSap', 'PPan', 'Rattus', 'Gallus']
+            #Matrix = evo_dist([
+            #                      'MACWSQLRLLLWKNLTFRRRQTCQLLLEVAWPLFIFLILISVRLSYPPYEQHECHFPNKAMPSAGTLPWVQGIICNANNPCFRYPTPGEAPGVVGNFNKSIV',
+            #                      'MACWPQLRLLLWKNLTFRRRQTCQLLLEVAWPLFIFLILISVRLSYPPYEQHECHFPNKAMPSAGTLPWVQGIICNANNPCFRYPTPGEAPGVVGNFNKSIV',
+            #                      'MAFWTQLGLLLWKNFTYRRRQTFQLLIEVAWPLFIFFILISVRLSYPPYEQHECHFPNKAMPSAGTLPWIQGIICNANNPCFRYPTPGESPGIVGNFNASIV',
+            #                      'MACWPQLRLLLWKNLTFRRRQTCQLLLEVAWPLFIFLILISVRLSYPPYEQHECHFPNKAMPSAGTLPWVQGIICNANNPCFRYPTPGEAPGVVGNFNKSIV'],A)
+            #A= ['a','b','c','d']
+            #Matrix=evo_dist(['GARFIELDTHEFASTCAT','GARFIELDTHELASTFATCAT','GARFIELDTHEVERYFASTCAT','THEFATCAT'],A)
+            #Matrix=[['x','a','b','c','d','e'],['a',1,5,9,9,8],['b',5,1,10,10,9],['c',9,10,1,8,7],['d',9,10,8,1,3],['e',8,9,7,3,1]]
+            #for i in Matrix:  print(i)
+            #print('\n\n\n')
+            #Matrix = [['x', 'a', 'b', 'c', 'd','e','f','g'], ['a',0, 17, 21, 27,23,21,28], ['b',17, 0, 16, 21,28,24,17], ['c', 21, 16, 0, 14,21,18,17],['d', 27, 21, 14, 0,19,24,23],['e',23,28,21,19,0,21,16],['f',21,24,18,24,21,0,16],['g',28,17,17,23,16,16,0]]
+               # , ['e', 8, 9, 7, 3, 0, 8],['f', 7, 4, 8, 6, 8, 0]]
+            #Matrix = [['x', 'a', 'b', 'c', 'd', 'e'], ['a', 0, 5, 9, 9, 8], ['b', 5, 0, 10, 10, 9],['c', 9, 10, 0, 8, 7],['d', 9, 10, 8, 0, 3], ['e', 8, 9, 7, 3, 0]]
+            #Matrix=[['x','a','b','c','d','e','f'],['a',0,5,4,7,6,8],['b',5,0,7,10,9,1],['c',4,7,0,7,6,8],['d',7,10,7,0,5,9],['e',6,9,6,5,0,8],['f',8,11,8,9,8,0]]
+            Matrix=[['x','a','b','c','d'],['a',0,8,4,6],['b',8,0,8,8],['c',4,8,0,6],['d',6,8,6,0]]
+            result, result1 = Joining(Matrix)
+            a=Generate_Node(Matrix, result1)
+        else:
+            result, result1 = Joining(a)
+            a = Generate_Node(a, result1)
+    except:
+        last_nodes_dist=(a[0][1],a[1][2],a[0][2])
+        print(last_nodes_dist)
+
+        break
+
+
+

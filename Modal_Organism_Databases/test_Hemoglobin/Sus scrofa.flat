@@ -1,0 +1,111 @@
+LOCUS       NC_010451               1279 bp    DNA     linear   CON 12-JAN-2018
+DEFINITION  Sus scrofa isolate TJ Tabasco breed Duroc chromosome 9,
+            Sscrofa11.1, whole genome shotgun sequence.
+ACCESSION   NC_010451 REGION: 4800675..4801953
+VERSION     NC_010451.4  GI:1154346162
+DBLINK      BioProject: PRJNA28993
+            BioSample: SAMN02953785
+            Assembly: GCF_000003025.6
+KEYWORDS    WGS; RefSeq.
+SOURCE      Sus scrofa (pig)
+  ORGANISM  Sus scrofa
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Suina; Suidae;
+            Sus.
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CM000820.5.
+            On May 13, 2017 this sequence version replaced NC_010451.3.
+            Assembly name: Sscrofa11.1
+            The genomic sequence for this RefSeq record is from the
+            whole-genome assembly released by The Swine Genome Sequencing
+            Consortium (SGSC) on 2017/02/07. The original whole-genome shotgun
+            project has the accession AEMK00000000.2.
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Provider      :: The Swine Genome Sequencing Consortium
+                                      (SGSC)
+            Assembly Date          :: 2016
+            Assembly Method        :: Falcon v. OCT-2015
+            Polishing Method       :: PILON
+            Assembly Name          :: Sscrofa11
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 65.0x
+            Sequencing Technology  :: PacBio
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Sus scrofa Annotation Release 106
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.4
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1279
+                     /organism="Sus scrofa"
+                     /mol_type="genomic DNA"
+                     /isolate="TJ Tabasco"
+                     /db_xref="taxon:9823"
+                     /chromosome="9"
+                     /sex="female"
+                     /breed="Duroc"
+     gene            complement(9..1267)
+                     /gene="HBB"
+                     /note="hemoglobin, beta; Derived by automated
+                     computational analysis using gene prediction method:
+                     BestRefSeq."
+                     /db_xref="GeneID:407066"
+     mRNA            complement(join(9..137,784..1006,1124..1267))
+                     /product="hemoglobin, beta"
+                     /inference="similar to RNA sequence, mRNA (same
+                     species):RefSeq:NM_001144841.1"
+                     /exception="annotated by transcript or proteomic data"
+                     /note="The RefSeq transcript has 3 substitutions compared
+                     to this genomic sequence; Derived by automated
+                     computational analysis using gene prediction method:
+                     BestRefSeq."
+                     /transcript_id="NM_001144841.1"
+                     /db_xref="GeneID:407066"
+     CDS             complement(join(9..137,784..1006,1124..1215))
+                     /inference="similar to AA sequence (same
+                     species):RefSeq:NP_001138313.1"
+                     /exception="annotated by transcript or proteomic data"
+                     /note="The RefSeq protein has 1 substitution compared to
+                     this genomic sequence; Derived by automated computational
+                     analysis using gene prediction method: BestRefSeq."
+                     /codon_start=1
+                     /product="hemoglobin subunit beta"
+                     /protein_id="NP_001138313.1"
+                     /db_xref="GI:261245058"
+                     /db_xref="GeneID:407066"
+                     /translation="MVHLSAEEKEAVLGLWGKVNVDEVGGEALGRLLVVYPWTQRFFE
+                     SFGDLSNADAVMGNPKVKAHGKKVLQSFSDGLKHLDNLKGTFAKLSELHCDQLHVDPE
+                     NFRLLGNVIVVVLARRLGHDFNPNVQAAFQKVVAGVANALAHKYH"
+ORIGIN      
+        1 aggggaactt agtggtactt gtgggccagg gcattggcca caccagccac caccttctga
+       61 aaagcagcct gcacatccgg gttgaagtca tggccaaggc ggcgagccag aacaaccact
+      121 atcacgttgc ccaggagctg tgggagagag ataaaaagga agggcctgat tagtagagga
+      181 ccagcttaga cccaggagta tttcagtctc atcccaagct gagcccctag aagataaaca
+      241 gaaagtgagc tgccgtgtag acgttactat tgatgtgaat ccacccatgg caacctgaat
+      301 gacagctaga aatgtttctc tctttctacc ttagtcttga atttatgtta tcctttttat
+      361 gctttagaac catgccagga agcaataaac attttatcct tcttgcctca aaaggaaaga
+      421 ataaggggca actgttagat aacatttttt aaagtggctt aaaagaagaa agtttttttt
+      481 tttttaacaa aacactcaaa aagtttaact taaaagagag aagacatcgc agaggaaaaa
+      541 aaacaaaaca aaacaaaaca aaacaaaaaa aacagaggag aacaagagag agtaagagga
+      601 aatgatggct gtgaataaga agagggaaaa gaaactcagt ggtcctgcag agtccccagc
+      661 tatgtaacca gaatgcttcc ttttcattct aaacggcatc ctgcctttcg gccctctctt
+      721 catgacacga gctcagccat gaccaaggag cagaaggaga acgtgagggt cccccagact
+      781 caccctgaag ttctcaggat ccacgtgcag ctggtcacag tgcagctcgc tcagcttagc
+      841 aaaggtgccc ttgaggttgt cgagatgttt caggccgtca ctgaaggact ggagcacctt
+      901 cttgccgtgg gccttcacct tgggattgcc catgacggca tcggcattgg acaggtcccc
+      961 aaaggactcg aagaacctct gagtccaggg gtagacaacc agcagcctga ggggtgaaaa
+     1021 gagcgcaagg cccgagggag tcagcacctg tcagaaaggc aggggtggct ctgtccccac
+     1081 ctgcccacct cccgctccct ctcctgaagc cctggatacc aacctgccca gggcctcacc
+     1141 accaacttcg tccacattca ctttgcccca caggccgagg acggcctcct tctcctcagc
+     1201 agacagatgc accatgttgt ctgtttgtgc agttgctagt gaacacggtt gtgtcagaag
+     1261 caaatgtagg tggctgctg
+//

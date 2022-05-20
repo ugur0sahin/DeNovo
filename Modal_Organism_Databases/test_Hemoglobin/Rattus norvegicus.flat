@@ -1,0 +1,120 @@
+LOCUS       NC_051336               1447 bp    DNA     linear   CON 21-JAN-2021
+DEFINITION  Rattus norvegicus strain BN/NHsdMcwi chromosome 1, mRatBN7.2, whole
+            genome shotgun sequence.
+ACCESSION   NC_051336 REGION: 158250402..158251848
+VERSION     NC_051336.1  GI:1933295152
+DBLINK      BioProject: PRJNA677964
+            BioSample: SAMN16261960
+            Assembly: GCF_015227675.2
+KEYWORDS    WGS; RefSeq.
+SOURCE      Rattus norvegicus (Norway rat)
+  ORGANISM  Rattus norvegicus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha;
+            Muroidea; Muridae; Murinae; Rattus.
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CM026974.1.
+            Assembly name: mRatBN7.1
+            The genomic sequence for this RefSeq record is from the
+            whole-genome assembly released by the Wellcome Sanger Institute on
+            2020/11/10. The original whole-genome shotgun project has the
+            accession JACYVU000000000.1.
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Provider      :: Wellcome Sanger Institute
+            Assembly Date          :: 20-MAY-2020
+            Assembly Method        :: FALCON-Unzip v. 2020
+            Assembly Name          :: mRatBN7.1
+            Diploid                :: Principal pseudohaplotype
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 92.0x
+            Sequencing Technology  :: PacBio Sequel; 10X Genomics Chromium;
+                                      BioNano; Arima Hi-C
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Rattus norvegicus Annotation Release
+                                           108
+            Annotation Version          :: 108
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.5
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1447
+                     /organism="Rattus norvegicus"
+                     /mol_type="genomic DNA"
+                     /strain="BN/NHsdMcwi"
+                     /db_xref="taxon:10116"
+                     /chromosome="1"
+                     /sex="male"
+                     /tissue_type="kidney"
+                     /country="USA: Wisconsin, Milwaukee, Medical College of
+                     Wisconsin"
+                     /collection_date="2019-03-08"
+                     /collected_by="Rebecca Schilling"
+     gene            complement(20..1431)
+                     /gene="Hbb"
+                     /note="hemoglobin subunit beta; Derived by automated
+                     computational analysis using gene prediction method:
+                     BestRefSeq."
+                     /db_xref="GeneID:24440"
+                     /db_xref="RGD:2783"
+     mRNA            complement(join(20..277,961..1183,1293..1431))
+                     /product="hemoglobin subunit beta"
+                     /inference="similar to RNA sequence, mRNA (same
+                     species):RefSeq:NM_033234.1"
+                     /exception="annotated by transcript or proteomic data"
+                     /note="The RefSeq transcript has 3 substitutions compared
+                     to this genomic sequence; Derived by automated
+                     computational analysis using gene prediction method:
+                     BestRefSeq."
+                     /transcript_id="NM_033234.1"
+                     /db_xref="GeneID:24440"
+     CDS             complement(join(149..277,961..1183,1293..1384))
+                     /inference="similar to AA sequence (same
+                     species):RefSeq:NP_150237.1"
+                     /exception="annotated by transcript or proteomic data"
+                     /note="The RefSeq protein has 1 substitution compared to
+                     this genomic sequence; Derived by automated computational
+                     analysis using gene prediction method: BestRefSeq."
+                     /codon_start=1
+                     /product="hemoglobin subunit beta-1"
+                     /protein_id="NP_150237.1"
+                     /db_xref="GI:17985949"
+                     /db_xref="GeneID:24440"
+                     /translation="MVHLTDAEKAAVNGLWGKVNPDDVGGEALGRLLVVYPWTQRYFD
+                     SFGDLSSASAIMGNPKVKAHGKKVINAFNDGLKHLDNLKGTFAHLSELHCDKLHVDPE
+                     NFRLLGNMIVIVLGHHLGKEFTPCAQAAFQKVVAGVASALAHKYH"
+ORIGIN      
+        1 attaatttaa cacaccattg cagtgaaagt aaatgccttt aattagtagg acagattttc
+       61 aaaggtcttt gtcattttga caacaactga cagatgctct cttgggaaca attgaccatt
+      121 gcacaaagac aagagcagga aaagaggttt agtggtactt gtgagccagg gcactggcca
+      181 ctccagccac caccttctgg aaggcagcct gtgcacaggg ggagaattcc ttgcccaggt
+      241 ggtggcccaa cacaatcaca atcatgttgc ccaggagctg tgggaagagg gaagaaccat
+      301 caacataatt gcagagcaaa aataccagac acttcaggct catttcaaat ggtgttttcg
+      361 tttccaactt aaagtactga aaaattataa tgagaattct atgtcagaca gaatttattg
+      421 taaaatatat tcttctcttc cactctggca tgaaagccaa ttactgctac tactctttag
+      481 agctgtggga agaaacaggg actcacatat cttccttgtc ctcagagcaa gttactaaga
+      541 aatatttaaa agaaaacaaa aagttgatta aaaaaagaga aaatggactg aggagaaaag
+      601 aaagaggtag ggtaatagaa agcagagaga aggactggga agagaggaag aggggaagct
+      661 gagatcggga tggaaagtaa ataagtcagt taattaattt ttttaaaaag aaaaaactgc
+      721 atctgaaaat taaaagttta ccaaagaaag aggaaatgac aacatagaat aatagagtga
+      781 gagggagaag tgattgtgaa tagaggataa aataactgga ctcctgtcaa cactccacag
+      841 ggcacatcca cacatcatca tcaaaactgc tccctagagt ggcttcctct ttccttctga
+      901 taggaatttg agcaggaaag ccacaggaag gacacccagt gaggagccca tcagactcac
+      961 cctgaagttc tcaggatcca catgcagctt gtcacagtgg agttcactca gatgagcaaa
+     1021 ggtgcccttg aggttgtcca agtgtttcag gccatcattg aaggcgttta tcaccttctt
+     1081 gccatgggcc ttcaccttag ggttacccat gatagcagag gcagaggaca ggtccccaaa
+     1141 gctatcaaag tacctctggg tccaagggta gacaaccagc agcctacaaa gggaaacata
+     1201 gccaggatac aataaaagtt agtacctgct ggaaagcaga cctctgtctc caagcaccaa
+     1261 acttctactt gccttgtaac ctggatacca acctgcccag ggcctcgcca ccaacatcat
+     1321 cagggttcac ctttccccac aggccattaa cagcagcctt ctcagcatca gtcaggtgca
+     1381 ccatggtgtc tgtttctgag tttgtgagtc aacacaacta tgtcagaagc aaatgtgagg
+     1441 agcgact
+//
